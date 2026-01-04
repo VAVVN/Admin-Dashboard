@@ -6,8 +6,163 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Admin Dashboard</h1>
-    <p>Welcome to the admin dashboard. Here you can manage users, view reports, and configure settings.</p>
+<body class="container">
+    <header class="app-header" role="banner"> <!-- Top bar: search on the left, user/notifications on the right -->
+            <div class="top-bar">
+                <form class="search" role="search" aria-label="Site Search"> <label for="header-search"
+                        class="visually-hidden"></label>
+                    <div class="search-input"> <span class="icon" aria-hidden="true">🔍</span> <input id="header-search"
+                            name="q" type="search" placeholder="" autocomplete="off" /> </div>
+                </form>
+                <div class="top-actions"> <button class="icon-btn" type="button" aria-label="Notifications"> <span class="icon"
+                            aria-hidden="true">🔔</span> </button> <button class="user-btn" type="button" aria-label="Account menu">
+                        <img class="avatar" src="avatar-cat.png" alt="Morgan Oakley avatar" width="32" height="32" /> <span
+                            class="user-name" style = "color : white; font-weight: 700; font-size: medium; font-family: 'Courier New', Courier, monospace;">Vuvuzela</span> </button> </div>
+            </div> <!-- Greeting and primary actions -->
+            <div class="hero">
+                <div class="greeting"> <img class="avatar-large" src="avatar-cat.png" alt="Morgan Oakley avatar" width="48"
+                        height="48" />
+                    <div class="greeting-text">
+                        <h2 class="title">Vuvuzela <span class="handle">(@Vuvuzela)</span></h2>
+                    </div>
+                </div>
+                <nav class="primary-actions" aria-label="Primary actions"> <button class="action-btn primary"
+                        type="button">New</button> <button class="action-btn" type="button">Upload</button> <button
+                        class="action-btn" type="button">Share</button> </nav>
+        </header>
+    
+    <aside class="sidebar">
+    <div class="logo">
+      <i class="fa-solid fa-table-cells"></i>
+      <span>Dashboard</span>
+    </div>
+
+    <nav>
+      <a href="#" class="item">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <br>
+      <a href="#" class="item">
+        <i class="fa-solid fa-id-card"></i>
+        <span>Profile</span>
+      </a>
+      <br>
+
+      <a href="#" class="item">
+        <i class="fa-solid fa-message"></i>
+        <span>Messages</span>
+      </a>
+      <br>
+      <a href="#" class="item">
+        <i class="fa-solid fa-clock"></i>
+        <span>History</span>
+      </a>
+      <br>
+      <a href="#" class="item">
+        <i class="fa-solid fa-file"></i>
+        <span>Tasks</span>
+      </a>
+      <br>
+      <a href="#" class="item">
+        <i class="fa-solid fa-users"></i>
+        <span>Communities</span>
+      </a>
+        <br>
+      <div class="spacer"></div>
+
+      <a href="#" class="item">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+      </a>
+      <br>
+
+      <a href="#" class="item">
+        <i class="fa-solid fa-circle-question"></i>
+        <span>Support</span>
+      </a>
+     <br>
+      <a href="#" class="item">
+        <i class="fa-solid fa-shield"></i>
+        <span>Privacy</span>
+      </a>
+    </nav>
+  </aside>
+<main class="dashboard"> <!-- Your Projects Section -->
+    <section class="projects">
+        <h2>Your Projects</h2>
+        <div class="project-list"> 
+            <article class="project-card">
+                <h3>Super Cool Project</h3>
+                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan
+                    nec.</p>
+                <div class="project-actions"> <button title="Favorite"><image class="icon-svg" src="star-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> <button title="View"><image class="icon-svg" src="eye-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button>
+                    <button title="Share"><image class="icon-svg" src="share-variant-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> </div>
+            </article>
+            <article class="project-card">
+                <h3>Less Cool Project</h3>
+                <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur
+                    sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                <div class="project-actions"> <button title="Favorite"><image class="icon-svg" src="star-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> <button title="View"><image class="icon-svg" src="eye-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button>
+                    <button title="Share"><image class="icon-svg" src="share-variant-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> </div>
+            </article>
+            <article class="project-card">
+                <h3>Impossible App</h3>
+                <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                <div class="project-actions"> <button title="Favorite"><image class="icon-svg" src="star-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> <button title="View"><image class="icon-svg" src="eye-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button>
+                    <button title="Share"><image class="icon-svg" src="share-variant-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> </div>
+            </article>
+            <article class="project-card">
+                <h3>Easy Peasy App</h3>
+                <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur
+                    dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                <div class="project-actions"> <button title="Favorite"><image class="icon-svg" src="star-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> <button title="View"><image class="icon-svg" src="eye-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button>
+                    <button title="Share"><image class="icon-svg" src="share-variant-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> </div>
+            </article>
+            <article class="project-card">
+                <h3>Ad Blocker</h3>
+                <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam
+                    sed malesuada eros.</p>
+                <div class="project-actions"> <button title="Favorite"><image class="icon-svg" src="star-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> <button title="View"><image class="icon-svg" src="eye-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button>
+                    <button title="Share"><image class="icon-svg" src="share-variant-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> </div>
+            </article>
+            <article class="project-card">
+                <h3>Money Maker</h3>
+                <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor
+                    purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                <div class="project-actions"> <button title="Favorite"><image class="icon-svg" src="star-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> <button title="View"><image class="icon-svg" src="eye-plus-outline copy.svg" alt="Home" width="29.5" height="23.5"></button>
+                    <button title="Share"><image class="icon-svg" src="share-variant-outline copy.svg" alt="Home" width="29.5" height="23.5"></button> </div>
+            </article>
+        </div>
+    </section> <!-- Announcements Section -->
+    <div class="announcements-trending">
+        <section class="announcements">
+            <h2>Announcements</h2>
+                <article class="announcement-item">
+                    <h3>Site Maintenance</h3>
+                    <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...
+                    </p>
+                </article>
+                <article class="announcement-item">
+                    <h3>Community Share Day</h3>
+                    <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                </article>
+                <article class="announcement-item">
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis
+                        sem in mattis...</p>
+                </article>
+        </section> <!-- Trending Section -->
+        <section class="trending">
+            <h2>Trending</h2>
+            <article class="trending-item">
+                <strong>@tegan</strong> – World Peace Builder
+                <strong>@morgan</strong> – Super Cool Project
+                <strong>@kendall</strong> – Life Changing App
+                <strong>@alex</strong> – No Traffic Maker
+            </article>
+        </section>
+    </div>
+</main>
 </body>
 </html>
